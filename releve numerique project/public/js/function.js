@@ -71,7 +71,7 @@ function renderTable(tbody, data) {
 
 
 
-
+/*
 function addEntry2() {
     const newEntry2 = {
         seance: prompt("Enter seance:"),
@@ -88,7 +88,7 @@ function addEntry2() {
     seancedata.push(newEntry2);
     renderTable(seancebody, dataseance);
 }
-
+*/
 /*
 function renderTable(seancebody, dataseance) {
     seancebody.innerHTML = "";
@@ -128,7 +128,7 @@ function renderTable(seancebody, dataseance) {
 renderTable(seancebody, dataseance);
 */
 
-
+/*
 function renderTable(seancebody, dataseance) {
   seancebody.innerHTML = "";
   dataseance.forEach((entry, index) => {
@@ -146,3 +146,4 @@ function renderTable(seancebody, dataseance) {
 
 // Call the renderTable function initially to render the table with initial data
 renderTable(seancebody, dataseance);
+*/
