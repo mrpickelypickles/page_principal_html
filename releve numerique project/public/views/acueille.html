@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr-Ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Relève numérique</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/releve_numerique.css">
+    <link rel="stylesheet" type="text/css" href="../css/releve_numerique.css">
+
+    <link rel="icon" href="blob:https://docs.google.com/e1a6744e-35f9-4817-a67d-8f533779eee2">
+    <title>Relève numérique</title>
+</head>
+<body>
+    <div id="placement">
+            <div id=logo><a href="acueille.html"><image src="/public/blob_https___docs.google.com_e1a6744e-35f9-4817-a67d-8f533779eee2.png" ></a></div>
+                <table>
+                    <tr>
+                      <th colspan="3">Pour nous joindre</th>
+                    </tr>
+                    <tr>
+                      <td>Question administrative:</td>
+                      <td><b class="boltname">Suzie Garon</b></td>
+                      <td>sgaron@cybercap.qc.ca</td>
+                    </tr>
+                    <tr>
+                      <td>Problème technique: </td>
+                      <td><b class="boltname">Alix Jasmin-Morissette</b></td>
+                      <td>ajasminmorissette@cybercap.qc.ca</td>
+                    </tr>
+                  </table>
+    </div>
+
+ </ul>
+ <div id="formulaire">
+  <P><B>Formulaire d'inscription aux activités Relève numérique pour l'année 2023-2024</B></P>
+  <p>Merci de lire les instructions suivente attentivement.</p>
+  </div>
+ <div id="instructions">
+ <p>Le programme Relève numérique vous offre un total de 13 activités, divisées comme suit:</p>
+ <ul><b>3</b> séances d'information sur les métiers du numérique</ul>
+ <ul><b>6</b> ateliers de sensibilisation à la citoyenneté à l'ère du numérique et à la cybersécurité</ul>
+ <ul><b>4</b> ateliers de création</ul>
+ 
+    <li>Les séances d'information se déroulent sur une période (<b class="time">75 minutes</b>) par activité.</li>
+    <li>Les ateliers de sensibilisation se déroulent sur trois périodes (<b class="time">3 x 75 minutes</b> par atelier).</li>
+    <li>Les ateliers de création sont dispensés sur quatre périodes (<b class="time">4 x 75 minutes</b> par atelier).</li>
+ </div>
+ <div class="indication_lien">
+ <p>Ce formulaire doit être <b>rempli en ligne</b> à partir du <b>lien</b> qui vous a été fourni.
+   <br> Vous pouvez <b>partager ce lien</b> au sein de votre organisation pour faciliter le processus d'inscription.</p>
+ </div>
+ <form>
+ <fieldset class="first">
+ <div class="progression">Progression</div>
+ <div class="grid-container">
+ <button class="buttonlink"><a href="#etape_1">Étape 1 - Informations:</a><!-- need chose between etapes or etape--></button>
+<button class="buttonlink"><a href="#etape_2">Étapes 2 - Plages horaires:</a></button> 
+<button class="buttonlink"><a href="#etape_3">Étape 3 - Profs:</a></button> 
+<button class="buttonlink"><a href="#etape_4">Étape 4 - Activités:</a></button> 
+ </div>
+ <div class="red"></div>
+ <p class="incomplet">Formulaire incomplet, veuillez compléter les informations demandées.</p>
+
+ </fieldset>
+ 
+
+ <h2 id="etape_1">Étape 1 -information générales</h2>
+ <form>
+    <ul>
+        <ol class="centerbaseline"><label for="region" class="bolt">Votre région administrative:</label><br></ol> <!--will see-->
+        <ol class="centerbaseline"><label></label>
+        <input type="text" id="region" name="region" class="auto-fit-impot"><br></ol> <!-- need to put a menu deroulant-->
+        
+        <ol class="centerbaseline"><label for="center" class="bolt">Votre centre de services scolaire:</label><br> <!-- may change title for a h#--></ol>
+
+        <ol class="centerbaseline"><label for="center">Nom complet du centre de services</label>
+        <input type="text" id="center_name" name="center_name" class="auto-fit-impot"><br></ol>
+    </ul>
+
+     <ul>
+        <br><ol class="centerbaseline"><label class="bolt">Votre école</label></ol>
+        <ol><P>Veuillez saisir les coordonnées de votre école:</P></ol>
+        <ol class="centerbaseline"><label for="school">Nom de l'école</label>
+        <input type="text" id="school" name="school" class="auto-fit-impot"><br></ol>
+        <ol class="centerbaseline"><label for="cybercap_code">Code école Cybercap</label>
+        <input type="text" id="cybercap_code" name="cybercap_code" class="auto-fit-impot"><br><!-- ??? if need it--></ol>
+        <ol class="centerbaseline"><label for="street_number">Numéro civique et rue</label>
+        <input type="text" id="street_number" name="street_number" class="auto-fit-impot"><br></ol>
+        <ol class="centerbaseline"><label for="city_name">Ville</label>
+        <input type="text" id="city_name" name="city_name" class="auto-fit-impot"><br></ol>
+        <ol class="centerbaseline"><label for="postal_code">Code postal</label>
+        <input type="text" id="postal_code" name="postal_code" class="auto-fit-impot"> <br></ol>
+    </ul>
+
+     <ul>
+        <br> <ol><label class="bolt">Personne mandatée</label></ol>
+        <ol><P>Veuillez saisir les coordonnées de la personne mandatée pour mettre en œuvres les activités de Relève numérique à votre école:</P></ol>
+        <ol class="centerbaseline"><label for="name">Prénom et nom</label>
+        <input type="text" id="name" name="name" class="auto-fit-impot"><br></ol>
+        <ol class="centerbaseline"><label for="fonction">Fonction</label>
+        <input type="text" id="fonction" name="fonction" class="auto-fit-impot"><br></ol><!-- ??? if need it-->
+        <ol class="centerbaseline"><label for="courriel">Courriel</label>
+        <input type="text" id="courriel" name="courriel" class="auto-fit-impot"><br></ol>
+        <ol class="centerbaseline"><label for="primary_cell">Téléphone principal</label>
+        <input type="text" id="primary_cell" name="primary_cell" class="auto-fit-impot"><br></ol>
+        <ol class="centerbaseline"><label for="secondary_cell">Téléphone secondaire</label>
+        <input type="text" id="secondary_cell" name="secondary_cell" class="auto-fit-impot"><br></ol>
+    </ul>
+
+    <ul>
+        <ol><label class="bolt">Commentaires ou particularités à nous communiquer</label></ol>
+        <ol><label for="commentaire">Utilisez cette zone de texte pour tout commentaire ou particularité à nous communiquer concernant la planification des événements. Nous vous invitons à entrer en contact avec CyberCap pour toutes questions.</label>
+        <input type="text" id="commentaire" name="commentaire" class="auto-fit-impot"></ol>
+    </ul>
+     <!-- Add more form fields as needed -->
+ </form>
+
+ <form>
+    <h2 id="etape_2">Étape 2 - Plages horaires</h2>
+    <p>Nous avons besoin de connaître les heures exactes de début et de fin pour chacune des périodes de cours d'une journée type.
+        Merci de les indiquer ci-dessous.</p>
+    <p>Les heures doivent être saisies au format HH:MM</p>
+
+    <ul id="periode1">
+        <ol><b>Période 1</b></ol>
+        <ol><label for="start_time">Heure de DÉBUT</label>
+            <input type="text" id="start_time" name="start_time"><br></ol>
+        <ol><label for="end_time">Heure de FIN</label>
+            <input type="text" id="end_time" name="end_time"><br></ol>
+    </ul>
+    <ul id="periode2">
+        <ol><b>Période 1</b></ol>
+        <ol><label for="start_time">Heure de DÉBUT</label>
+            <input type="text" id="start_time" name="start_time"><br></ol>
+        <ol><label for="end_time">Heure de FIN</label>
+            <input type="text" id="end_time" name="end_time"><br></ol>
+    </ul>
+    <ul id="periode3">
+        <ol><b>Période 1</b></ol>
+        <ol><label for="start_time">Heure de DÉBUT</label>
+            <input type="text" id="start_time" name="start_time"><br></ol>
+        <ol><label for="end_time">Heure de FIN</label>
+            <input type="text" id="end_time" name="end_time"><br></ol>
+    </ul>
+    <ul id="periode4">
+        <ol><b>Période 1</b></ol>
+        <ol><label for="start_time">Heure de DÉBUT</label>
+            <input type="text" id="start_time" name="start_time"><br></ol>
+        <ol><label for="end_time">Heure de FIN</label>
+            <input type="text" id="end_time" name="end_time"><br></ol>
+    </ul>
+    
+ </form>
+ 
+ <form id="addEntryForm1" onsubmit="addEntry(event, data)">
+    <h2 id="etape_3">Étape 3 - Enseignant.e.s impliqué.e.s</h2>
+    <p>Nos activités sont réalisées en collaboration avec une enseignante ou un enseignant. Merci de saisir leurs coordonnées ci-dessous.</p>
+    <p>Ces informations ré-apparaîtront à l'étape suivante pour pouvoir assigner une ou un prof à l'activité désirée.</p>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Prénom et nom</th>
+                <th>Matière enseignée</th>
+                <th>Courriel</th>
+                <th>Téléphone principal</th>
+                <th>Téléphone secondaire</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button onclick="addEntry(data)">Add Entry</button>
+
+    
+ </form>
+
+
+ <form>
+    <h2 id="etape_4">Étape 4 - Choix des activités</h2>
+    <p>Le nom de l'activité et le nom de l'enseignant.e doivent être sélectionnés à partir du menu déroulant.</p> 
+       <p>La date doit être choisie à partir de l'interface calendrier.</p>
+       <p>Une information inscrite manuellement risque de rendre le formulaire inopérant. N'hésitez pas à contacter Cybercap pour obtenir de l'assistance.</p>
+    <p>Les dates doivent être saisies au format AAAA-MM-JJ</p>
+    <h3>Étape 4a - Choix des 3 séances d'information</h3>
+    <seancetable id="choix_des_3_séances_d_information">
+        <thead>
+            <tr>
+                <th>Séance</th>
+                <th>Enseignant.e</th>
+                <th>Numéro de groupe</th>
+                <th>Nombre d'élèves</th>
+                <th>Niveau</th>
+                <th>Local</th>
+                <th>Date</th>
+                <th>Période</th>
+                <th>Disponibilité</th>
+            </tr>
+        </thead>
+        <seancebody id="seancebody">
+            
+        </seancebody>
+    </seancetable>
+    <button onclick="addEntry2(dataseance)">Add Entry</button>
+ </form>
+
+ <form> <!-- repeat n# time to match wit the -->
+    <h3>Étape 4b - Choix des ateliers de sensibilisation</h3>
+    <tttable id="choix_des_6_ateliers">
+        <thead>
+            <tr> <!-- repeat only onetime before break-->
+                <th>Séance</th>
+                <th>Enseignant.e</th>
+                <th>Numéro de groupe</th>
+                <th>Nombre d'élèves</th>
+                <th>Niveau</th>
+                <th>Local</th>
+                <br> <!-- repeat n# time after break in fonction of cours-->
+                <th>Date</th>
+                <th>Période</th>
+                <th>Disponibilité</th>
+            </tr>
+        </thead>
+        <ttbody>
+            
+        </ttbody>
+    </tttable>
+    <button onclick="addEntry2(dataseance)">Add Entry</button>
+ </form>
+
+ <form> <!-- repeat n# time to match wit the -->
+    <h3>Étape 4c - Choix des 4 ateliers de création</h3>
+    <tttable id="choix_des_6_ateliers">
+        <thead>
+            <tr> <!-- repeat only onetime before break-->
+                <th>Séance</th>
+                <th>Enseignant.e</th>
+                <th>Numéro de groupe</th>
+                <th>Nombre d'élèves</th>
+                <th>Niveau</th>
+                <th>Local</th>
+                <br> <!-- repeat n# time after break in fonction of cours-->
+                <th>Date</th>
+                <th>Période</th>
+                <th>Disponibilité</th>
+            </tr>
+        </thead>
+        <ttbody>
+            
+        </ttbody>
+    </tttable>
+    <button onclick="addEntry2(dataseance)">Add Entry</button>
+ </form>
+
+ <fieldset>
+    <legend>Progression</legend>
+    <div>
+    <button><a href="#etape_1">Étape 1 - Informations:</a><!-- need chose between etapes or etape--></button>
+    </div>
+    <div>
+   <button><a href="#etape_2">Étapes 2 - Plages horaires:</a></button> 
+    </div>
+    <div>
+   <button><a href="#etape_3">Étape 3 - Profs:</a></button> 
+    </div>
+    <div>
+   <button><a href="#etape_4">Étape 4 - Activités:</a></button> 
+    </div>
+    </fieldset>
+    <p>Formulaire incomplet, veuillez compléter les informations demandées.</p>
+<FORM>
+    <input type="submit" value="Envoyer">
+</FORM>
+<script src="/public/js/function.js"></script> 
+<script src="js/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,229 @@
+:root{
+  --sizegeneral:24px;
+  --sizeinstructions:14px;
+  --darkblue:#0b5394;
+  --lightblue:#cfe2f3;
+  --tranparent: tranparent;
+  --bgcolor: white;
+  --textwhite:white;
+  --lightgray:#efefef;
+  --yellow :#fbbc04 ;
+  --red:#ea4335;
+  --boxinfocolor:#d0e0e3;
+  --borderpage:100px;
+}
+
+body {
+  
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--bgcolor);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    
+  }
+  
+  #placement{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+  }
+
+  #logo {
+    text-align: center;
+    }
+    #logo img {
+    width: 300px;
+    }
+  
+  #joindre {
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    background-color: var(--darkblue);
+  }
+  
+  table {
+    border-collapse: content;
+    width: 100%;
+    height: 100%;
+    border-spacing: 0px;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+
+  }
+  
+  th {
+    background-color: var(--darkblue);
+    color: var(--textwhite);
+    font-family: arial;
+    font-size: var(--sizegeneral);
+    font-style: bold;
+
+  }
+  
+  tr{
+    background-color: var(--lightblue);
+  }
+  
+  td{
+    font-size: 18px;
+    width: content;
+  }
+
+ b .boltname{
+    font-weight: 500;
+    width:fit-content;
+  
+  }
+
+  #formulaire{
+    padding: 15px;
+    align-self: left;
+    font-size: var(--sizegeneral);
+  }
+  #formulaire p, #formulaire p B{
+    margin: 0px;
+  }
+
+
+  #instructions{
+  background-color: var(--lightgray);
+  font-family: var(--sizeinstructions);
+  padding-left: 5px;
+
+  }
+  
+  #instructions ul{
+    padding: 0 0 0 300px; /*top, right, bottom, and left*/
+    
+  }
+
+  b.time{
+    font-family: var(--sizeinstructions);
+    
+
+  }
+  
+  .indication_lien{
+    background-color: var(--yellow);
+    text-align: center;
+    border-top: 10px solid var(--bgcolor);
+    border-bottom: 10px solid var(--bgcolor);
+  }
+.first{
+  padding:0;
+  width:100%;
+}
+
+  .progression{
+  width: 100%;
+  background-color: var(--darkblue);
+  color: var(--textwhite);
+  padding: 3px;
+  vertical-align: baseline;
+  height: var(--sizegeneral);
+  display: flex;
+  align-items: center;  
+  }
+  
+  .grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: auto-fit;
+  padding: 0 20px;
+
+  background: var(--lightblue);
+
+  }
+  .buttonlink{
+    border: var(--tranparent);
+    background-color: var(--tranparent);
+    height:var(--sizegeneral) ;
+  }
+
+  .red{
+    padding-top: 5px;
+    background-color: var(--red);
+    height:var(--sizegeneral) ;
+  }
+
+  .incomplet{
+text-align: center;
+color: var(--textwhite);
+background-color: var(--darkblue) ;
+margin: 0px;
+vertical-align: baseline;
+height: var(--sizegeneral);
+display: flex;
+align-items: center;  
+justify-content: center;
+ }
+
+ #etape_1{
+background-color: var(--lightgray);
+ }
+
+ ul,ol, ol label b {
+  padding: 5px;
+  
+ }
+
+
+ form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: inline-block;
+  width: 300px;
+  text-align: right;
+  margin-right: 10px;
+  padding: 5px 5px 5px 0px;/*top, right, bottom, and left*/
+
+}
+
+form input [type="text"] {
+  flex: 1;
+}
+
+.bolt{
+  width: fit-content;
+  font-weight: 700;
+}
+
+.auto-fit-impot {
+  width: calc(100% - 350px);
+  float: right;
+  background-color: var(--boxinfocolor);
+  border: dotted 1px;
+}
+
+.centerbaseline{
+vertical-align: baseline;
+height: var(--sizegeneral);
+display: flexbox;
+align-items: center;
+}
+
+
+

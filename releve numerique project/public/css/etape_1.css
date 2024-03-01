@@ -1,8 +1,11 @@
+
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
+    width: fit-content;
+   
 }
 
 h1 {

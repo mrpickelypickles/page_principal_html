@@ -1,9 +1,17 @@
 const table = document.getElementById("myTable");
 const tbody = table.querySelector("tbody");
+const maxEntries1 = 3; // Maximum number of entries allowed
 /*
 const seancetable = document.getElementById("choix_des_3_séances_d_information");
 const seancebody = seancetable.querySelector("seancebody");
 */
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Your form handling code here
+});
+
 
 const data = [
     {
@@ -29,7 +37,16 @@ const dataseance = [
     }
 ];
 
-function addEntry() {
+function addEntry(event, data) {
+    event.preventDefault(); // Prevents the page from refreshing
+
+    
+
+    if (data.length >= maxEntries1) {
+        alert('Maximum number of entries reached. Cannot add more entries.');
+        return;
+    }
+
     const newEntry = {
         name: prompt("Enter name:"),
         subject: prompt("Enter subject:"),
@@ -37,12 +54,12 @@ function addEntry() {
         mainPhone: prompt("Enter main phone number (format: 123-456-7890):"),
         secondaryPhone: prompt("Enter secondary phone number (format: 123-456-7890):")
     };
-
+// Rest of your addEntry function code
     data.push(newEntry);
     renderTable(tbody, data);
 }
 
-function renderTable(tbody, data) {
+function renderTable( data) {
     data.forEach((entry, index) => {
         if (index === 0) return; // Skip rendering the first entry (it's the initial data)
 
@@ -64,14 +81,14 @@ function renderTable(tbody, data) {
         secondaryPhoneCell.textContent = entry.secondaryPhone;
     });
     
-  
+ 
 }
- renderTable(tbody,data); 
+  renderTable(tbody,data); 
 
 
 
 
-/*
+
 function addEntry2() {
     const newEntry2 = {
         seance: prompt("Enter seance:"),
@@ -88,7 +105,7 @@ function addEntry2() {
     seancedata.push(newEntry2);
     renderTable(seancebody, dataseance);
 }
-*/
+
 /*
 function renderTable(seancebody, dataseance) {
     seancebody.innerHTML = "";
@@ -128,22 +145,5 @@ function renderTable(seancebody, dataseance) {
 renderTable(seancebody, dataseance);
 */
 
-/*
-function renderTable(seancebody, dataseance) {
-  seancebody.innerHTML = "";
-  dataseance.forEach((entry, index) => {
-    if (index === 0) return; // Skip rendering the first entry (it's the initial data)
-
-    const row = seancebody.insertRow();
-
-    const seanceCell = row.insertCell();
-    seanceCell.textContent = entry.seance;
-
-    // ... (add the rest of the table cell renderings for the other attributes)
-
-  });
-}
-
 // Call the renderTable function initially to render the table with initial data
 renderTable(seancebody, dataseance);
-*/
